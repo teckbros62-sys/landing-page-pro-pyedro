@@ -1,0 +1,528 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+    to bottom,
+    rgba(123, 12, 214, 0.95), /* roxo quase sólido */
+    rgba(64, 5, 109, 0.9),
+    #080000
+  );
+}
+
+.cabecalho {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   padding: 25px;
+}
+ .cabecalho-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  align-items: center;
+ }
+
+.cabecalho-imagem {
+  display: flex;
+  height: 150px;
+  gap: 40px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 25px;
+
+}
+.cabecalho-menu {
+  font-family: "Poppins", sans-serif;
+  color: #FFF2E7 !important;
+   font-weight: 400;
+   font-size: 18px;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid yellow
+}
+  .conteudo-principal {
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px;
+  }
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+ .conteudo-principal-escrito-titulo {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 78px;
+  color: #dada00;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+  .conteudo-principal-escrito-subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+  }
+  
+    .conteudo-principal-escrito-botao {
+      background-color: yellow;
+      width: 200px;
+      height: 70px;
+      border: none;
+      box-shadow:2px 5px 4px rgba(218, 221, 15, 0.95);
+      border-radius: 20px;
+       font-family: "Inconsolata", monospace;
+       font-weight: 400;
+       font-size: 35px;
+       color:#080000
+    }
+    .conteudo-principal-escrito-botao:hover {
+      background-color: #bdca0b;
+    }
+    .conteudo-principal-escrito-botao-2 {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 70px;
+      border: none;
+      box-shadow:2px 5px 4px rgba(157, 17, 221, 0.95);
+      border-radius: 20px;
+       font-family: "Inconsolata", monospace;
+       font-weight: 400;
+       font-size: 30px;
+       color:#a613ca
+    }
+    .conteudo-principal-escrito-botao-2:hover {
+    background-color: #32043b;
+    }
+    
+
+  .conteudo-principal-imagem {
+    height: 430px;
+  }
+ 
+  .conteudo-segundario {
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 20px;
+  }
+  .conteudo-segundario-titulo {
+  border-top:0.4px solid #e7e306;
+  padding-top: 48px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-size: 24px;
+  color:#dada00;
+  margin-bottom: 16px;
+  }
+  .conteudo-segundario-paragrafo {
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   color: rgb(222, 223, 216);
+  }
+.rodape {
+  padding: 30px;
+  border-top: 0.4px solid  #d4d419 
+}
+  .rodape-imagem {
+   height: 300px;
+   display: block;
+   margin: 0 auto;
+  }
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+.botao-menor {
+  width: 260px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 14px;
+}
+.imagem-container {
+  position: relative;
+  display: inline-block;
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 3px solid #dada00;
+}
+
+.selo-aprovacao {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #dada00;
+  color: #080000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.frase-card {
+  max-width: 300px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #dada00;
+  border-left: 3px solid #dada00;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rodape {
+  border-top: 1px solid rgba(218, 218, 0, 0.4);
+  padding: 50px 20px 30px;
+  background: transparent;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.rodape-coluna h4 {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #dada00;
+  margin-bottom: 16px;
+}
+
+.rodape-coluna p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.rodape-direitos {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.titulo-secao {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.descricao-secao {
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.beneficios-grid,
+.materias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.beneficio-card::before,
+.materia-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 6px;
+  height: 60%;
+  background: #ffdd00;
+  border-radius: 0 8px 8px 0;
+}
+
+.beneficio-card h3,
+.materia-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffdd00;
+}
+
+.beneficio-card p,
+.materia-card p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.materia-card span {
+  display: block;
+  margin: 18px 0 12px;
+  font-weight: 600;
+  color: #ffdd00;
+}
+
+.materia-card a {
+  display: inline-block;
+  color: #000;
+  background: #ffdd00;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.materia-card a:hover {
+  background: #ffd000;
+  transform: translateY(-2px);
+}
+
+.beneficio-card:hover,
+.materia-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(255, 221, 0, 0.25);
+}
+
+.voltar-container {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 40px;
+}
+
+.botao-voltar {
+  background: #ffdd00;
+  color: #080000;
+  padding: 16px 32px;
+  border-radius: 18px;
+  font-family: "Inconsolata", monospace;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(255, 221, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background: #ffd000;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(255, 221, 0, 0.7);
+}
+
+.planos {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.planos-titulo {
+  font-family: "Inconsolata", monospace;
+  font-size: 42px;
+  color: #ffdd00;
+}
+
+.planos-subtitulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.planos-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plano-card {
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid #ffdd00;
+  border-radius: 24px;
+  padding: 40px 30px;
+  width: 320px;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.plano-card h3 {
+  font-size: 26px;
+  color: #ffdd00;
+}
+
+.plano-descricao {
+  font-size: 16px;
+  margin: 10px 0 30px;
+}
+
+.plano-preco {
+  margin-bottom: 30px;
+}
+
+.plano-preco .moeda {
+  font-size: 18px;
+}
+
+.plano-preco .valor {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.plano-preco .tempo {
+  display: block;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.plano-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.plano-card li {
+  margin-bottom: 10px;
+}
+
+.plano-botao {
+  display: inline-block;
+  background: #ffdd00;
+  color: #080000;
+  padding: 14px 28px;
+  border-radius: 16px;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.plano-botao:hover {
+  background: #ffd000;
+  transform: translateY(-4px);
+}
+
+/* PLANO MAIS POPULAR */
+.destaque {
+  transform: scale(1.05);
+  border-width: 3px;
+}
+
+.badge {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffdd00;
+  color: #080000;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.garantia {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #dada00;
+}
+
+.voltar-index-container {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0 50px;
+}
+
+.voltar-index-botao {
+  background: linear-gradient(135deg, #ffeb3b, #ffd000);
+  color: #080000;
+  padding: 18px 36px;
+  border-radius: 22px;
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow:
+    0 6px 0 #c9b200,
+    0 18px 35px rgba(255, 221, 0, 0.6);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.voltar-index-botao::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.voltar-index-botao:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 10px 0 #bfa900,
+    0 26px 45px rgba(255, 221, 0, 0.75);
+}
+
+.voltar-index-botao:active {
+  transform: translateY(0);
+  box-shadow:
+    0 4px 0 #bfa900,
+    0 12px 20px rgba(255, 221, 0, 0.5);
+}
