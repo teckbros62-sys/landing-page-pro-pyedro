@@ -92,8 +92,8 @@ body {
   
     .conteudo-principal-escrito-botao {
       background-color: yellow;
-      width: 150px;
-      height: 70px;
+      width: 200px;
+      height: 50px;
       border: none;
       box-shadow:2px 5px 4px rgba(218, 221, 15, 0.95);
       border-radius: 20px;
@@ -526,4 +526,5 @@ section {
     0 4px 0 #bfa900,
     0 12px 20px rgba(255, 221, 0, 0.5);
 }
+
 
