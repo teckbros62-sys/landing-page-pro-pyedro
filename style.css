@@ -98,8 +98,8 @@ body {
       box-shadow:2px 5px 4px rgba(218, 221, 15, 0.95);
       border-radius: 20px;
        font-family: "Inconsolata", monospace;
-       font-weight: 300;
-       font-size: 35px;
+       font-weight: 400;
+       font-size: 30px;
        color:#080000
     }
     .conteudo-principal-escrito-botao:hover {
@@ -526,6 +526,7 @@ section {
     0 4px 0 #bfa900,
     0 12px 20px rgba(255, 221, 0, 0.5);
 }
+
 
 
 
